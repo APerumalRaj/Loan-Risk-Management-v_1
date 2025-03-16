@@ -1,0 +1,12 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.import.gradle.enabled": true,
+    "java.import.maven.enabled": true,
+    "java.import.generatesMetadataFilesAtProjectRoot": false,
+    "files.exclude": {
+        ".classpath": true,
+        ".project": true,
+        ".settings/": true
+    }
+}

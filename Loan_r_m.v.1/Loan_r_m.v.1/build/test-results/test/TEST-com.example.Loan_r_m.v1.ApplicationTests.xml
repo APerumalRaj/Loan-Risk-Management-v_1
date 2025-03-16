@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.Loan_r_m.v1.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-15T07:07:23" hostname="aperumalraj-loanriskman-jva1qoz17vr" time="0.588">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.Loan_r_m.v1.ApplicationTests" time="0.588"/>
+  <system-out><![CDATA[07:07:21.049 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.Loan_r_m.v1.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:07:21.142 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.Loan_r_m.v1.Application for test class com.example.Loan_r_m.v1.ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-03-15T07:07:21.533Z  INFO 18624 --- [Loan_r_m.v.1] [    Test worker] c.example.Loan_r_m.v1.ApplicationTests   : Starting ApplicationTests using Java 17.0.14 with PID 18624 (started by gitpod in /workspace/Loan-Risk-Management-v_1/Loan_r_m.v.1/Loan_r_m.v.1)
+2025-03-15T07:07:21.535Z  INFO 18624 --- [Loan_r_m.v.1] [    Test worker] c.example.Loan_r_m.v1.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-03-15T07:07:22.110Z  INFO 18624 --- [Loan_r_m.v.1] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-03-15T07:07:22.226Z  INFO 18624 --- [Loan_r_m.v.1] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 R2DBC repository interface.
+2025-03-15T07:07:23.296Z  INFO 18624 --- [Loan_r_m.v.1] [    Test worker] c.example.Loan_r_m.v1.ApplicationTests   : Started ApplicationTests in 2.014 seconds (process running for 3.388)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
