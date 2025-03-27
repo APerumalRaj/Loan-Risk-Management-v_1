@@ -30,10 +30,11 @@ public class CustomerController {
     // }
     
     @GetMapping("/{id}")
-    public Mono<CustomerModel>  getCustomerById(@PathVariable int id) {
-        return service.getCustomerById(id);
-    }
-
+    public Mono<ResponseEntity<CustomerModel>> getCustomerById(@PathVariable int id) {
+    return service.getCustomerById(id)
+        .map(ResponseEntity::ok)
+        .defaultIfEmpty(ResponseEntity.notFound().build()); 
+   }
     @PostMapping
     public Mono<String> addCustomer(@RequestBody CustomerModel customer) {
         return service.addCustomer(customer);
