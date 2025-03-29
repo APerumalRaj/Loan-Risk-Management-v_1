@@ -1,8 +1,9 @@
 package com.example.Loan_r_m.v1.LoanRisk.controller;
 
-import com.example.loanrisk.service.RiskScoringEngine;
-import com.example.loanrisk.model.RiskEvaluationRequest;
 import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Mono;
+import com.example.Loan_r_m.v1.LoanRisk.service.RiskScoringEngine;
+import com.example.Loan_r_m.v1.LoanRisk.model.RiskEvaluationRequest;
 
 @RestController
 @RequestMapping("/risk")
@@ -15,13 +16,7 @@ public class RiskScoringController {
     }
 
     @PostMapping("/evaluate")
-    public String evaluateRisk(@RequestBody RiskEvaluationRequest request) {
-        int riskScore = riskScoringEngine.calculateRiskScore(
-                request.getLoanAmount(),
-                request.getCreditHistory(),
-                request.getIncome()
-        );
-
-        return "Loan ID: " + request.getLoanId() + " | Risk Score: " + riskScore;
+    public Mono<Integer> evaluateRisk(@RequestBody RiskEvaluationRequest request) {
+        return riskScoringEngine.calculateRiskScore(request);
     }
 }

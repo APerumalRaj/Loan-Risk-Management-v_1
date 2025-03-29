@@ -5,7 +5,7 @@ import org.springframework.data.relational.core.mapping.Table;
 import lombok.Data;
 
 @Data
-@Table(name = "Customer_Details") // Use @Table instead of @Entity
+@Table(name = "Customer_Details") 
 public class CustomerModel {
 
     @Id // Use Spring Data annotation, not JPA

@@ -1,7 +1,7 @@
 package com.example.Loan_r_m.v1.LoanRisk.messaging;
 
-import com.example.loanrisk.model.LoanApplication;
-import com.example.loanrisk.service.LoanRiskService;
+import com.example.Loan_r_m.v1.LoanRisk.model.LoanApplication;
+import com.example.Loan_r_m.v1.LoanRisk.service.LoanRiskService;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 

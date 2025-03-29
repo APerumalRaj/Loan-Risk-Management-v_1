@@ -4,7 +4,7 @@ package com.example.Loan_r_m.v1.LoanRisk.messaging;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import com.example.loanrisk.model.LoanApplication;
+import com.example.Loan_r_m.v1.LoanRisk.model.LoanApplication;
 
 @Component
 public class RiskAssessmentPublisher {
