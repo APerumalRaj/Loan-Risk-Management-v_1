@@ -2,12 +2,63 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Loan Risk Management</title>
     <link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-    <h1>Just page for Loan Risk management dev</h1>
-    <input     
+    <header>
+        <h1>Loan Risk Management System</h1>
+        <p>Enter your loan details to check eligibility and risk score</p>
+        <hr/>
+    </header>
 
+    <main>
+        <form th:action="@{/check-risk}" method="post">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+            </div>
+
+            <div>
+                <label for="loanAmount">Loan Amount (INR):</label>
+                <input type="number" id="loanAmount" name="loanAmount" required />
+            </div>
+
+            <div>
+                <label for="loanType">Loan Type:</label>
+                <select id="loanType" name="loanType" required>
+                    <option value="">Select</option>
+                    <option value="personal">Personal Loan</option>
+                    <option value="home">Home Loan</option>
+                    <option value="education">Education Loan</option>
+                    <option value="business">Business Loan</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="income">Monthly Income (INR):</label>
+                <input type="number" id="income" name="income" required />
+            </div>
+
+            <div>
+                <label for="existingLoans">Do you have existing loans?</label>
+                <input type="checkbox" id="existingLoans" name="existingLoans" />
+            </div>
+
+            <div>
+                <button type="submit">Check Loan Risk</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <hr/>
+        <p>© 2025 Loan Risk Management | Built with Spring Boot + Thymeleaf</p>
+    </footer>
 </body>
 </html>
